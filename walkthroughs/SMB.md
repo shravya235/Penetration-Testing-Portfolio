@@ -7,14 +7,7 @@ Performed **SMB Enumeration** on a vulnerable Metasploitable2 target. Discovered
 
 ##  Tools Used
 - `nmap`
-- `enum4linux`
-- `smbclient`
 - `Metasploitable2 (target system)`
-
----
-
-## Screenshot – Open Ports (139, 445)
-![smb-ports-nmap](../images/smbports.jpg)
 
 ---
 
@@ -22,31 +15,20 @@ Performed **SMB Enumeration** on a vulnerable Metasploitable2 target. Discovered
 
 ### 1. Scanned for Open Ports
 
- Confirmed SMB is running:
 - Port 139 → NetBIOS Session Service
 - Port 445 → Microsoft-DS Active Directory / SMB
 
 ---
 
-### 2. Ran Enum4linux to Get Share Info
-
- Revealed:
-- OS version
-- Share names
-- User list
-- Anonymous login possibility
-
----
-
-### 3. Connected Using `smbclient`
+### 2. Connected Using `smbclient`
 
 #### List available shares:
 
-Got list of share names like `tmp`, `opt`, `ipc$`
+Got list of share names like `tmp`, `opt`
 
 ---
 
-### 4. Accessed a Share
+### 3. Accessed a Share
 
 Anonymous login attempt:
 
@@ -59,26 +41,7 @@ smbclient //<target-ip>/<sharename> -N
 ## Screenshot – Logged into Share & Explored
 ![smb](../images/smb.jpg)
 
-Used commands like:
-```bash
-ls
-cd foldername
-get filename
-put shell.php
-```
-
  Navigated directories, searched for `passwd`, or uploaded a test file.
-
----
-
-## Key SMB Concepts from Internship
-
-| Action                 | Tool Used      |
-|------------------------|----------------|
-| Port Scan              | `nmap`         |
-| OS/Share/User Enum     | `enum4linux`   |
-| Access Share (Anon)    | `smbclient -N` |
-| Authenticated Access   | `smbclient -U` |
 
 ---
 
