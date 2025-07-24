@@ -22,11 +22,11 @@ I tested for **Stored Cross-Site Scripting (XSS)** on a custom hospital dashboar
 
 ### 1. Injected the payload in “Patient Message”:
 
-<script>alert(document.cookie)</script>
+Used a Javascript payload
 
 ### 2. Used Cookie Stealer
 
-Used a payload which secretly sent the cookies of the doctor user to my webhook endpoint.
+Used a js payload which secretly sent the cookies of the doctor user to my webhook endpoint.
 
 3. Checked DevTools → Application → Cookies
 Grabbed the session JWT from the browser
