@@ -1,7 +1,7 @@
-<h1 align="center">🛡️ Web and Network Pentesting Portfolio 🕵️‍♀️</h1>
+<h1 align="center">🛡️ Web and Network Pentesting Portfolio</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=F70D1A&center=true&vCenter=true&width=500&lines=Offensive+Security+in+Action...;Burp+Suite+%7C+Kali+Linux+%7C+Metasploit+%7C+CTF+Walkthroughs" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=FF3D3D&center=true&vCenter=true&width=600&lines=Burp+Suite+%7C+Kali+Linux+%7C+Metasploit+%7C+TryHackMe+Labs+%7C+CTF+Walkthroughs" alt="Typing SVG" />
 </p>
 
 ---
@@ -66,4 +66,4 @@ Click to explore:
 ---
 
 ```bash
-git clone https://github.com/shravya/Web-Network-Pentesting-Portfolio.git
+git clone https://github.com/shravya235/Penetration-Testing-Portfolio.git
