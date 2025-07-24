@@ -1,16 +1,14 @@
-# SSH Access via Brute Force – Metasploitable2 (CTF)
+# SSH Access via Brute Force – Metasploitable2 
 
 ##  What I Did
-Targeted an exposed **SSH service (port 22)** on a vulnerable CTF machine. Used `medusa` to perform a brute-force login attack with a list of common usernames and passwords. Successfully gained shell access as `msfadmin`, then accessed `/etc/passwd` to confirm full login.
+Targeted an exposed **SSH service (port 22)** on a vulnerable machine. Used `medusa` to perform a brute-force login attack with a list of common usernames and passwords. Successfully gained admin access, then accessed `/etc/passwd` to confirm full login.
 
 ---
 
 ## Tools Used
 - Metasploitable2 (target machine)
-- `nmap` (to verify SSH service)
-- `medusa` (for brute-force attack)
-- `nano` (for wordlist creation)
-- SSH client (for remote shell access)
+- `nmap` 
+- `medusa` 
 
 ---
 
@@ -22,13 +20,13 @@ Targeted an exposed **SSH service (port 22)** on a vulnerable CTF machine. Used 
 ## Steps
 
 ### 1. Scanned the target to confirm SSH is running  
-Used a service scan to detect open **port 22** and confirm it was SSH. This indicated a remote shell might be accessible.
+Used a service scan to detect open Port 22 and confirm it was SSH.
 
 ### 2. Created Username & Password Lists  
-Manually prepared two text files: one with **usernames** (`user.txt`) and another with **passwords** (`password.txt`) — common practice in brute-force testing.
+Manually created files for usernames and passwords
 
 ### 3. Ran Medusa for SSH Brute Force  
-Executed `medusa` to attempt all combinations from the wordlists. After several tries, successfully authenticated as the default user `msfadmin`.
+Executed `medusa` to attempt all combinations from the wordlists. 
 
 Login was successful — no lockouts or rate-limiting in place.
 
@@ -52,13 +50,9 @@ Once inside, navigated the file system and read `/etc/passwd` to confirm user-le
 ### 2. **Rate Limiting**
    Enable fail2ban or sshguard to prevent brute-force attacks
 
-### 3. **Key-Based Authentication**
-   Replace password-based login with SSH key pairs
-
-### 4. **Use Strong Passwords**
+### 3. **Use Strong Passwords**
    Prevent dictionary attacks using basic wordlists
 
-### 5. **Audit Logs Regularly**
+### 4. **Audit Logs Regularly**
    Monitor `/var/log/auth.log` for repeated failed attempts
 
----
