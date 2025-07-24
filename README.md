@@ -4,11 +4,11 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=FF3D3D&center=true&vCenter=true&width=600&lines=Kali+Linux+%7C+Burp+Suite+%7C+Metasploit" alt="Typing SVG" />
 </p>
 
-<p align="center"><b>🔓 Cybersecurity Training @ Nitte | Red Team & Forensics | July 2025</b></p>
+<p align="center"><b> Cybersecurity Training | Red Team & Forensics | July 2025</b></p>
 
 ---
 
-## 📌 About This Repo
+##  About This Repo
 
 This repository documents the hands-on tasks I performed during my **Cybersecurity Internship (July 2025)**, focused on:
 - Web application exploitation
@@ -24,7 +24,7 @@ This repository documents the hands-on tasks I performed during my **Cybersecuri
 
 | Category         | Tools & Frameworks                             |
 |------------------|-------------------------------------------------|
-| Web Pentesting   | Burp Suite, sqlmap, OWASP ZAP, FFUF, Gobuster   |
+| Web Pentesting   | Burp Suite, FFUF, Gobuster   |
 | Network Exploits | Nmap, Wireshark, Metasploit, Medusa, Hydra     |
 | Forensics        | Autopsy, Volatility, ExifTool                  |
 | OS & Platforms   | Kali Linux, Metasploitable2                    |
@@ -47,9 +47,9 @@ This repository documents the hands-on tasks I performed during my **Cybersecuri
 
 ---
 
-## 🧠 Real-World Scenarios Documented
+## Real-World Scenarios Documented
 
--  Attacked custom-hosted vulnerable web apps on Kali using **Burp Suite**, **sqlmap**, and **manual payloads**
+-  Attacked custom-hosted vulnerable web apps on Kali using **Burp Suite** and **manual payloads**
 -  Discovered misconfigured file upload and directory traversal vulnerabilities
 -  Gained unauthorized access via **SMB**, **FTP**, and **brute-force attacks**
 -  Captured reverse shells via Metasploit (e.g., MS17-010)
@@ -59,20 +59,20 @@ This repository documents the hands-on tasks I performed during my **Cybersecuri
 
 ---
 
-## 📁 Walkthrough Index
+## Walkthrough Index
 
 Each write-up includes: **Setup ➜ Exploit Steps ➜ Screenshot Proof ➜ Mitigation**  
 Click to explore:
 
 | Vulnerability / Topic        | Walkthrough Link                                     |
 |------------------------------|------------------------------------------------------|
-| SQL Injection (sqlmap)       | [`walkthroughs/SQLi-sqlmap.md`](walkthroughs/SQLi.md)     |
-| Cross-Site Scripting (XSS)   | [`walkthroughs/XSS-JuiceShop.md`](walkthroughs/XSS.md) |
-| Local File Inclusion (LFI)   | [`walkthroughs/LFI-DVWA.md`](walkthroughs/LFI.md)           |
-| SMB Enumeration              | [`walkthroughs/SMB-Enum.md`](walkthroughs/SMB-Enum.md)           |
-| SSH Brute Force (Medusa)     | [`walkthroughs/SSH-Bruteforce.md`](walkthroughs/SSH.md) |
+| SQL Injection (sqlmap)       | [`walkthroughs/SQLi.md`](walkthroughs/SQLi.md)     |
+| Cross-Site Scripting (XSS)   | [`walkthroughs/XSS.md`](walkthroughs/XSS.md) |
+| Local File Inclusion (LFI)   | [`walkthroughs/LFI.md`](walkthroughs/LFI.md)           |
+| SMB Enumeration              | [`walkthroughs/SMB-Enum.md`](walkthroughs/SMB.md)           |
+| SSH Brute Force (Medusa)     | [`walkthroughs/SSH.md`](walkthroughs/SSH.md) |
 | SSTI on Flask Apps           | [`walkthroughs/SSTI.md`](walkthroughs/SSTI.md)                   |
-| IDOR Access Exploit          | [`walkthroughs/IDOR-Nitte.md`](walkthroughs/IDOR.md)       |
+| IDOR Access Exploit          | [`walkthroughs/IDOR.md`](walkthroughs/IDOR.md)       |
 
 ---
 
