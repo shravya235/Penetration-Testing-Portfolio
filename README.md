@@ -66,13 +66,13 @@ Click to explore:
 
 | Vulnerability / Topic        | Walkthrough Link                                     |
 |------------------------------|------------------------------------------------------|
-| SQL Injection (sqlmap)       | [`walkthroughs/SQLi-sqlmap.md`](walkthroughs/SQLi-sqlmap.md)     |
-| Cross-Site Scripting (XSS)   | [`walkthroughs/XSS-JuiceShop.md`](walkthroughs/XSS-JuiceShop.md) |
-| Local File Inclusion (LFI)   | [`walkthroughs/LFI-DVWA.md`](walkthroughs/LFI-DVWA.md)           |
+| SQL Injection (sqlmap)       | [`walkthroughs/SQLi-sqlmap.md`](walkthroughs/SQLi.md)     |
+| Cross-Site Scripting (XSS)   | [`walkthroughs/XSS-JuiceShop.md`](walkthroughs/XSS.md) |
+| Local File Inclusion (LFI)   | [`walkthroughs/LFI-DVWA.md`](walkthroughs/LFI.md)           |
 | SMB Enumeration              | [`walkthroughs/SMB-Enum.md`](walkthroughs/SMB-Enum.md)           |
-| SSH Brute Force (Medusa)     | [`walkthroughs/SSH-Bruteforce.md`](walkthroughs/SSH-Bruteforce.md) |
+| SSH Brute Force (Medusa)     | [`walkthroughs/SSH-Bruteforce.md`](walkthroughs/SSH.md) |
 | SSTI on Flask Apps           | [`walkthroughs/SSTI.md`](walkthroughs/SSTI.md)                   |
-| IDOR Access Exploit          | [`walkthroughs/IDOR-Nitte.md`](walkthroughs/IDOR-Nitte.md)       |
+| IDOR Access Exploit          | [`walkthroughs/IDOR-Nitte.md`](walkthroughs/IDOR.md)       |
 
 ---
 
