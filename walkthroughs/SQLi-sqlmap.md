@@ -28,33 +28,34 @@ Username: admin'--
 Password: (anything)
  This works by closing the SQL query and commenting out the rest.
 
-3. Error-Based SQLi
+### 3. Error-Based SQLi
 Injected:
 
 Username: ' OR '1'='1
 Password: test
  Application showed error or allowed access depending on backend logic.
 
-4. Time-Based SQLi
+### 4. Time-Based SQLi
 Injected:
 
 Username: ' OR SLEEP(5)--
 The server response was delayed, confirming SQL query execution.
 
 
-Fixes from Internship Notes
-1. Sanitize SQL Inputs
+## Fixes:
+
+### 1. Sanitize SQL Inputs
 
 Escape characters like ' and --
 
 Use server-side input validation
 
-2. Use Whitelisting
+### 2. Use Whitelisting
 
 Reject unexpected input types
 
 Blacklists are weak (can be bypassed using encoding)
 
-3. Use Prepared Statements
+### 3. Use Prepared Statements
 
 Bind user input as parameters, not as raw SQL
