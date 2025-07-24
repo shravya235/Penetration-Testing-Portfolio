@@ -8,7 +8,6 @@ Tested a web server for **Directory Listing** vulnerability by navigating backwa
 ##  Tools Used:
 - Vulnerable web site
 - View Page Source 
-- Burp Suite (optional for request inspection)
 
 ---
 
@@ -49,9 +48,7 @@ Manually removed parts of the URL and visited each level:
 If the server allows browsing folder contents (without an `index.html` file or access restriction), it's vulnerable to **Directory Listing**. This can expose:
 
 - Source code files
-- Uploaded documents
-- Backup configs
-- Admin panels or development folders
+- Admin panels or development folders ,etc
 
 ---
 
