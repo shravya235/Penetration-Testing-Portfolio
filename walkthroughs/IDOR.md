@@ -1,13 +1,12 @@
 # IDOR 
 
 ## What I Did  
-Tested the **Nitte web application** for insecure access controls by manipulating user ID parameters. Was able to view or modify records belonging to other users by changing the `user_id` field in a POST request — a classic **IDOR vulnerability**.
+Tested for insecure access controls by manipulating user ID parameters. Was able to view or modify records belonging to other users by changing the `user_id` field in a POST request — a classic **IDOR vulnerability**.
 
 ---
 
 ## Tools Used
 - Burp Suite
-- Browser DevTools
 
 ---
 
@@ -39,7 +38,7 @@ Submitted the request again, received a **success message**, and data for anothe
 
 ---
 
-## 🧪 Horizontal vs. Vertical Privilege Escalation
+## Horizontal vs. Vertical Privilege Escalation
 
 | Type        | Description                                                                 |
 |-------------|-----------------------------------------------------------------------------|
