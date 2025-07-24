@@ -6,14 +6,14 @@ Tested SQL Injection on the **Altoro Mutual login page**. Used manual payloads l
 ---
 
 ##  Tools Used
-- AltoroMutual (vulnerable web app)
+- SQL vulnerable site
 - Browser (manual testing)
 - Burp Suite (optional for request capture)
 
 ---
 
 ##  Screenshot – Admin Panel Access
-![adminaccess](../images/sql.png)
+![sql](../images/sql.png)
 
 ---
 
