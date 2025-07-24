@@ -47,18 +47,6 @@ This repository documents the hands-on tasks I performed during my **Cybersecuri
 
 ---
 
-## Real-World Scenarios Documented
-
--  Attacked custom-hosted vulnerable web apps on Kali using **Burp Suite** and **manual payloads**
--  Discovered misconfigured file upload and directory traversal vulnerabilities
--  Gained unauthorized access via **SMB**, **FTP**, and **brute-force attacks**
--  Captured reverse shells via Metasploit (e.g., MS17-010)
--  Documented all attacks with CVSS scores and mitigations
--  Explored **Microsoft 365** cloud security and **EDR bypasses** in lab
--  Created forensic reports using tools like **Autopsy** and **Volatility** on memory dumps, exfiltrated drives, and steganography challenges
-
----
-
 ## Walkthrough Index
 
 Each write-up includes: **Setup ➜ Exploit Steps ➜ Screenshot Proof ➜ Mitigation**  
