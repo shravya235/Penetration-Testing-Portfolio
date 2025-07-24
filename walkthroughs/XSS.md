@@ -1,4 +1,4 @@
-# XSS – MedCare Dashboard
+# XSS
 
 ##  What I Did
 I tested for **Stored Cross-Site Scripting (XSS)** on a custom hospital dashboard. Injected JavaScript inside the patient message input, and it got executed across all user dashboards (Stored XSS).
@@ -6,7 +6,7 @@ I tested for **Stored Cross-Site Scripting (XSS)** on a custom hospital dashboar
 ---
 
 ##  Tools Used
-- vulnerable site
+- XSS vulnerable site
 - JavaScript payloads
 - webhook.site (for capturing cookies, optional)
 - DevTools (Application tab)
@@ -14,14 +14,14 @@ I tested for **Stored Cross-Site Scripting (XSS)** on a custom hospital dashboar
 ---
 
 ## Screenshot – Stored XSS Triggered
-![xss](../images/XSS.jpg)
+![xss](../images/xss.jpg)
 
 ---
 
 ##  Steps
 
 ### 1. Injected the payload in “Patient Message”:
-```html
+
 <script>alert(document.cookie)</script>
 
 ### 2. Used Cookie Stealer
