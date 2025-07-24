@@ -13,7 +13,7 @@ Tested SQL Injection on the **Altoro Mutual login page**. Used manual payloads l
 ---
 
 ##  Screenshot – Admin Panel Access
-![altoro-login-fail](../images/sql.png)
+![adminaccess](../images/sql.png)
 
 ---
 
