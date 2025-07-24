@@ -54,8 +54,8 @@ Click to explore:
 
 | Vulnerability / Topic        | Walkthrough Link                                     |
 |------------------------------|------------------------------------------------------|
-| SQL Injection (SQLi)       | [`walkthroughs/SQLi.md`](walkthroughs/SQLi.md)     |
-| Cross-Site Scripting (XSS)   | [`walkthroughs/XSS.md`](walkthroughs/XSS.md) |
+| SQL Injection (SQLi)       | [`walkthroughs/SQLi.md`](.archive/walkthroughs/SQLi.md)     |
+| Cross-Site Scripting (XSS)   | [`walkthroughs/XSS.md`](.archive/walkthroughs/XSS.md) |
 | Local File Inclusion (LFI)   | [`walkthroughs/LFI.md`](walkthroughs/LFI.md)           |
 | SMB Enumeration              | [`walkthroughs/SMB-Enum.md`](walkthroughs/SMB.md)           |
 | SSH Brute Force (Medusa)     | [`walkthroughs/SSH.md`](walkthroughs/SSH.md) |
