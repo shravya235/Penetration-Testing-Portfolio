@@ -59,12 +59,12 @@ Click to explore:
 | Local File Inclusion (LFI)   | [`walkthroughs/LFI.md`](walkthroughs/LFI.md)           |
 | SMB Enumeration              | [`walkthroughs/SMB-Enum.md`](walkthroughs/SMB.md)           |
 | SSH Brute Force (Medusa)     | [`walkthroughs/SSH.md`](walkthroughs/SSH.md) |
-| Directory Listing           | [`walkthroughs/SSTI.md`](walkthroughs/SSTI.md)                   |
+| Directory Listing           | [`walkthroughs/DL.md`](walkthroughs/DL.md)                   |
 | IDOR Access Exploit          | [`walkthroughs/IDOR.md`](walkthroughs/IDOR.md)       |
 
 ---
 
-## 🧾 Clone This Repo
+## Clone This Repo
 
 ```bash
 git clone https://github.com/shravya235/Penetration-Testing-Portfolio.git
